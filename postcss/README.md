@@ -21,7 +21,7 @@ npm run build --report
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
 
-<h1>该项目应用了postcss 转换px单位设置</h1>
+#postcss 转换px单位设置
 first:
   安装postcss-px2rem 插件
 second:
@@ -33,4 +33,11 @@ third:
   在入口文件添加script即可实现px自动转rem操作
   <script>document.getElementsByTagName('html')[0].style.fontSize = (document.documentElement.clientWidth ||  document.body.clientWidth) /10 + 'px';</script>
 
-<h1>表格转换excel</h1>
+#表格转换excel
+  first:
+　　npm install -S file-saver xlsx
+　　npm install -D script-loader
+
+  second:
+    导入文件，调用库
+

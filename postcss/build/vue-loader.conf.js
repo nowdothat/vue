@@ -23,6 +23,7 @@ module.exports = {
   },
 
   postcss: function() {
+    require('Autoprefixer')()
     return [px2rem({remUnit: 75})];
-  }
+  },
 }
