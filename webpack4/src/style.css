@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'MyFont';
+  src: url('./font/iconfont.eot');
+  src: url('./font/iconfont.eot?#iefix') format('embedded-opentype'),
+      url('./font/iconfont.woff2') format('woff2'),
+      url('./font/iconfont.woff') format('woff'),
+      url('./font/iconfont.ttf') format('truetype'),
+      url('./font/iconfont.svg#iconfont') format('svg');
+      font-weight:600;
+      font-style:normal;
+}
+.hello {
+  color: red;
+  font-family: 'MyFont';
+  /* background: url('./11.png'); */
+}

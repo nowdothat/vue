@@ -3,6 +3,7 @@ const path = require('path')
 const utils = require('./utils')
 const config = require('../config')
 const vueLoaderConfig = require('./vue-loader.conf')
+const { VueLoaderPlugin } = require('vue-loader')
 
 function resolve (dir) {
   return path.join(__dirname, '..', dir)
@@ -11,6 +12,7 @@ function resolve (dir) {
 
 
 module.exports = {
+  mode : 'development',
   context: path.resolve(__dirname, '../'),
   entry: {
     app: './src/main.js'
@@ -66,6 +68,9 @@ module.exports = {
         }
       }
     ]
+    ,plugins: [
+      new VueLoaderPlugin()
+  ],
   },
   node: {
     // prevent webpack from injecting useless setImmediate polyfill because Vue
