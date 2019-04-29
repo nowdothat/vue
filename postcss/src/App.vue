@@ -12,6 +12,7 @@
 
 <script>document.getElementsByTagName('html')[0].style.fontSize = (document.documentElement.clientWidth ||  document.body.clientWidth) /10 + 'px';</script>
 <script>
+console.log(123)
 import '@/assets/css/reset.css'
 import '@/assets/css/common.css'
 export default {
