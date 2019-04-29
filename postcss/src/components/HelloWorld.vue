@@ -1,6 +1,9 @@
 <template>
-  <div class="hello">
-    123
+  <div>
+    <div class="hello">
+      {{msg}}  
+    </div>
+    <router-link to="/vuelidate">vuelidateTarget</router-link>
   </div>
 </template>
 

@@ -4,6 +4,9 @@ import Vue from 'vue'
 import App from './App'
 import router from './router'
 import { Table, TableColumn, Button, ButtonGroup} from 'element-ui'
+import Vuelidate from 'vuelidate'
+
+Vue.use(Vuelidate)//安装插件
 Vue.use(Table)
 Vue.use(TableColumn)
 Vue.use(Button)

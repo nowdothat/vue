@@ -15,6 +15,11 @@ export default new Router({
       path: '/excel',
       name: 'excel',
       component: () => import('@/views/excel')
+    },
+    {
+      path: '/vuelidate',
+      name: 'vuelidate',
+      component: () => import('@/views/vuelidate')
     }
   ]
 })
