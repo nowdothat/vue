@@ -1,5 +1,4 @@
 const path = require('path');
-const htmlWebpackPlugin = require('html-webpack-plugin');
 function resolve (dir) {
   return path.join(__dirname, dir)
 }
@@ -7,7 +6,6 @@ function resolveDist(dir) {
   return path.posix.join('../../',dir)
 }
 
-// console.log('=>>>>>', resolveDist('/saas/public/static/admin'),resolve('../../saas/resources/views/admin/index.php'))
 module.exports = {
   // publicPath: process.env.NODE_ENV === 'production'
   //   ? '/static/admin'
@@ -16,7 +14,7 @@ module.exports = {
   publicPath: '/',
   outputDir: 'dist',
   assetsDir: 'static',
-  // indexPath: resolve('../../saas/resources/views/admin/index.php'),
+  // indexPath: resolve('../../admin/index.html'),
   chainWebpack: (config)=>{
     config.resolve.alias
       .set('@', resolve('src'))

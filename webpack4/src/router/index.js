@@ -13,8 +13,8 @@ export default new Router({
       children: [
         {
           path: '/test',
-          name: 'excel',
-          component: () => import('@/views/excel.vue')
+          name: 'cssModule',
+          component: () => import('@/views/cssModule.vue')
         }
       ]
     }

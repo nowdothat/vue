@@ -30,3 +30,9 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
   third
     修改package.json的内容及启动方式
 
+#postcss
+vue-loader 支持通过 postcss-loader 自动加载同一个配置文件：
+
+postcss.config.js
+.postcssrc
+package.json 中的 postcss
