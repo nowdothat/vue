@@ -20,17 +20,13 @@ npm run build --report
 
 For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
 
+#升级webpack4的流程分析
+  first
+    ``将build/config文件夹下的文件全部删掉了，因为@vue/cli-service，支持0配置``
+  second
+    ``新建vue.config.js--@vue/cli-service的需要
+    新建babel.config.js--@vue/cli-plugin-babel的需要
+    ``
+  third
+    修改package.json的内容及启动方式
 
-<h1>该项目应用了postcss 转换px单位设置</h1>
-first:
-  安装postcss-px2rem 插件
-second:
-  在build/vue-loader.conf.js里面添加
-  postcss: function() {
-    return [px2rem({remUnit: 75})];
-  }
-third:
-  在入口文件添加script即可实现px自动转rem操作
-  <script>document.getElementsByTagName('html')[0].style.fontSize = (document.documentElement.clientWidth ||  document.body.clientWidth) /10 + 'px';</script>
-
-<h1>表格转换excel</h1>
