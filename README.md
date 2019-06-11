@@ -7,4 +7,4 @@
 将postcss cli项目升级为webpack4项目
 
 # webpack4-2分支
-用官方文档进行搭建基础webpack项目配置
+根据官方文档进行搭建webpack4项目配置
