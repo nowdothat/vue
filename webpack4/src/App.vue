@@ -1,5 +1,12 @@
 <template>
   <div id="app">
-    成功解析Vue文件格式
+    根组件
+    <router-view></router-view>
   </div>
 </template>
+
+<script>
+  export default {
+    name: 'app'
+  }
+</script>
