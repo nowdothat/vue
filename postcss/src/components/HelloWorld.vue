@@ -1,11 +1,4 @@
-<template>
-  <div>
-    <div class="hello">
-      {{msg}}  
-    </div>
-    <router-link to="/vuelidate">vuelidateTarget</router-link>
-  </div>
-</template>
+
 
 <script>
 export default {
@@ -14,6 +7,9 @@ export default {
     return {
       msg: 'Welcome to Your Vue.js App'
     }
+  },
+  render(h) {
+    return <div>{this.msg}</div>
   }
 }
 </script>
