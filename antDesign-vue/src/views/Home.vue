@@ -1,7 +1,7 @@
 <template>
   <div>
     <LineChart
-      :data="lineData"
+      :data = "lineData"
     />
   </div>
 </template>

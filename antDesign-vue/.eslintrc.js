@@ -12,5 +12,5 @@ module.exports = {
   },
   "rules": { // 自定义规则，行尾增加分号；
     "semi": ["error", "always"]
-    }
+  }
 }
