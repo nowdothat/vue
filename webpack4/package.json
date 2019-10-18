@@ -8,8 +8,8 @@
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
     "watch": "webpack --watch",
-    "dev": "npm run start",
-    "server": "node server.js"
+    "server": "node server.js --config webpack.dev.js",
+    "dev": "webpack --config webpack.dev.js --watch"
   },
   "author": "",
   "license": "ISC",

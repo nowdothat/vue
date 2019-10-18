@@ -1,0 +1,4 @@
+<% for (var file in htmlWebpackPlugin.files.css) { %>
+  <div><%=file%></div>
+  <link rel="stylesheet" type="text/css" href="{{base_settings.static_assets_host | safe}}<%=htmlWebpackPlugin.files.css[file]%>">
+<% } %>
