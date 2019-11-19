@@ -7,9 +7,9 @@
   "scripts": {
     "start": "webpack-dev-server --open --config webpack.dev.js",
     "build": "webpack --config webpack.prod.js",
-    "watch": "webpack --watch",
+    "watch": "webpack --config webpack.dev.js --watch",
     "server": "node server.js --config webpack.dev.js",
-    "dev": "webpack --config webpack.dev.js --watch"
+    "dev": "npm run start"
   },
   "author": "",
   "license": "ISC",
