@@ -4,6 +4,7 @@
     <button @click="toggle('AsyncComponent')">AsyncComponent</button>
     <button @click="toggle('TwoAsyncComponent')">TwoAsyncComponent</button>
     <component v-bind:is="currentTabComponent"></component>
+    <p>子级p 标签</p>
   </div>
 </template>
 
@@ -39,3 +40,8 @@
     }
   }
 </script>
+<style scoped>
+p {
+  color: red;
+}
+</style>
